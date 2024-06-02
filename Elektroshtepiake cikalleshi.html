@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Elektroshtëpiake Cikalleshi</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style type="text/css" src="style.css"></style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+	<style>
+    body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    background-color: #FCEEEE;
+    }
+		#menu{
+      background-color: #DB1616;
+    }
+    #about{padding: 10px 90px;
+      margin-top: 15px;
+
+    }
+    .navbar-brand{
+      color: white;
+    }
+    .navbar-brand:hover{
+      color: #D3D3D3;
+    }
+    
+    .navbar-nav>li>a {
+    color: white;
+    }
+    .navbar-nav>li>a:hover{
+      background-color: #f6f6f6;
+      text-decoration: none;
+      color:  #696969;
+    }
+    .navbar-nav li.active a{
+      background-color: black;
+    }
+    .navbar-toggle{
+      background-color: white;
+      color:#fff !important;
+    }
+    .navbar-toggle .icon-bar{
+      background-color: #DB1616;
+    }
+    .bg-grey{
+      padding: 60px 50px;
+      background-color: #f6f6f6;
+      margin-top: 15px;
+    }
+    #services{
+      padding: 60px 50px;
+      background-color: white;
+      margin-top: 15px;
+    }
+    .table tbody tr td a{
+      color: #807C7C;
+    }
+    .table tbody tr td a:hover{
+      color: #C36925;
+      text-decoration: none;
+    }
+    .table thead tr td a{
+      color: #807C7C;
+    }
+    .table thead tr td a:hover{
+      color: #C36925;
+      text-decoration: none;
+    }
+    .modal-header, h4, .close {
+    background-color: #5cb85c;
+    color:white !important;
+    /*text-align: center;*/
+    font-size: 30px;
+  }
+  h2>a{
+    color: #818181;
+    
+  }
+  h2>a:hover{
+    text-decoration: none;
+    color: #C36925;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+  #footer{
+    background-color: #DB1616;
+    color: white;
+    margin-top: 5px;
+  }
+  /* Conatct start */
+
+        .header-title
+        {
+          text-align: center;
+          color:#818181;
+        }
+
+        #tip 
+        {
+            display:none;  
+        }
+
+        .fadeIn
+        {
+          animation-duration: 3s;
+          background-color: white;
+          margin-top: 10px;
+        }
+
+        .form-control
+        {
+          border-radius:0px;
+          border:1px solid #EDEDED;
+        }
+
+        .form-control:focus
+        {
+          border:1px solid #00bfff;
+        }
+
+        .textarea-contact
+        {
+          resize:none; 
+        }
+
+        .btn-send
+        {
+          border-radius: 0px;
+          border:1px solid #00bfff;
+          background:#00bfff;
+          color:#fff; 
+        }
+
+        .btn-send:hover
+        {
+          border:1px solid #00bfff;
+          background:#fff;
+          color:#00bfff;
+          transition:background 0.5s;   
+        }
+
+        .second-portion{
+          margin-top:50px; 
+        }
+
+    @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+    @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+
+    .box > .icon { text-align: center; position: relative; }
+    .box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #00bfff; vertical-align: middle; }
+    .box > .icon:hover > .image { background: #333; }
+    .box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+    .box > .icon:hover > .image > i { color: white !important; }
+    .box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; min-height:163px;}
+    .box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+    .box > .icon > .info > h3.title { font-family: "Robot",sans-serif !important; font-size: 16px; color: #222; font-weight: 700; }
+    .box > .icon > .info > p { font-family: "Robot",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
+    .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
+    .box > .icon > .info > .more a { font-family: "Robot",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+    .box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #63B76C; }
+    .box .space { height: 30px; }
+
+
+    @media only screen and (max-width: 768px)
+    {
+      .contact-form
+      {
+        margin-top:25px; 
+      }
+
+      .btn-send
+      {
+        width: 100%;
+        padding:10px; 
+      }
+
+      .second-portion
+      {
+        margin-top:25px; 
+      }
+    }
+  /* Conatct end */
+	</style>
+	
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <!--Navigation Bar--> 
+	<nav class="navbar navbar-collapse navbar-fixed-top" id="menu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="Elektroshtepiake cikalleshi.html">Elektroshtëpiake Cikalleshi</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+             <li><a href="rrethnesh.html">Rreth nesh</a></li>
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Artikujt
+               <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="elektroshtepiaketevogla.html">Elektroshtëpiaket e vogla</a></li>
+                 <li><a href="elektroshtepiaketemedha.html">Elektroshtëpiaket e mëdha</a></li>
+               </ul>
+             </li>
+             <li><a href="sherbimet.html">Shërbimet</a></li>
+             <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>  
+      </div>
+	</nav>   
+ <!--About--> 
+      <div class="container" id="about">
+        <div id="myCarousel-1" class="carousel slide" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+             <li data-target="#myCarousel" data-slide-to="3"></li>
+             <li data-target="#myCarousel" data-slide-to="4"></li>
+             <li data-target="#myCarousel" data-slide-to="5"></li>        
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+           <div class="item active">
+             <img src="img/foto1.jpg" alt="Foto 1" style="width: 100%; height: 500px;">
+           </div>
+           <div class="item">
+             <img src="img/foto5.jpg" alt="Foto 2" style="width: 100%; height: 500px;">
+           </div>
+           <div class="item">
+             <img src="img/foto6.jpg" alt="Foto 3" style="width: 100%; height: 500px;">
+           </div>
+           <div class="item">
+             <img src="img/foto3.jpg" alt="Foto 4" style="width: 100%; height: 500px;">
+           </div>
+           <div class="item">
+             <img src="img/foto7.jpg" alt="Foto 5" style="width: 100%; height: 500px;">
+           </div>
+           <div class="item">
+             <img src="img/foto8.jpg" alt="Foto 6" style="width: 100%; height: 500px;">
+           </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel-1" data-slide="prev">
+           <span class="glyphicon glyphicon-chevron-left"></span>
+           <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel-1" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right"></span>
+           <span class="sr-only">Next</span>
+          </a>
+       </div>
+      </div>
+<!--Artikujt-->
+<div class="container-fluid" id="artikujt">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 style="font-family: Cooper Black; text-align: center;">Artikujt</h3>
+       <div class="container">
+        <div class="row">
+        <div class="col-sm-3">
+         <div>
+          <br>
+          <table class="table table">
+            <thead>
+              <tr>
+                  <td><a href="elektroshtepiaketevogla.html" style="font-family: Cooper Black;">Elektroshtëpiaket e vogla</a></td>
+              </tr>
+            </thead>
+            <tbody id="tablebody">
+              <tr>
+                <td><a href="blender.html">Blender</a></td>
+              </tr>
+              <tr>
+                <td><a href="grirese.html">Grirëse</a></td>
+              </tr>
+              <tr>
+                <td><a href="rrahese.html">Rrahese</a></td>
+              </tr>
+              <tr>
+                <td><a href="shtrydhese.html">Shtrydhese</a></td>
+              </tr>
+              <tr>
+                <td><a href="tostjere.html">Tostjere</a></td>
+              </tr>
+              <tr>
+                <td><a href="thekese.html">Thekese buke</a></td>
+              </tr>
+              <tr>
+                <td><a href="ekspres.html">Ekspres</a></td>
+              </tr>
+              <tr>
+                <td><a href="tenxhere.html">Tenxhere</a></td>
+              </tr>
+              <tr>
+                <td><a href="tigan.html">Tigan</a></td>
+              </tr>
+              <tr>
+                <td><a href="hekura.html">Hekura</a></td>
+              </tr>
+              <tr>
+                <td><a href="tharese.html">Tharëse flokësh</a></td>
+              </tr>
+              <tr>
+                <td><a href="fshese.html">Fshesë me korent</a></td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+      </div> 
+      <div class="col-sm-3">
+       <div>
+          <br>
+          <table class="table table">
+            <thead>
+              <tr>
+                <td><a href="elektroshtepiaketemedha.html" style="font-family: Cooper Black;">Elektroshtëpiaket e mëdha</a></td>
+              </tr>
+            </thead>
+            <tbody id="tablebody">
+              <tr>
+                <td><a href="tV.html">Televizor</a></td>
+              </tr>
+              <tr>
+                <td><a href="lavatrice.html">Lavatriçe</a></td>
+              </tr>
+              <tr>
+                <td><a href="frigorifere.html">Frigoriferë</a></td>
+              </tr>
+              <tr>
+                <td><a href="lavastovilje.html">Lavastovilje</a></td>
+              </tr>
+              <tr>
+                <td><a href="mikrovale.html">Mikrovalë</a></td>
+              </tr>
+              <tr>
+                <td><a href="bolier.html">Bolier</a></td>
+              </tr>
+              <tr>
+                <td><a href="aspiratore.html">Aspiratorë</a></td>
+              </tr>
+              <tr>
+                <td><a href="furra.html">Furra</a></td>
+              </tr>
+              <tr>
+                <td><a href="pianura.html">Pianura</a></td>
+              </tr>
+              <tr>
+                <td><a href="lavapjate.html">Lavapjatë</a></td>
+              </tr>
+              <tr>
+                <td><a href="kondicionere.html">Kondicionerë</a></td>
+              </tr>
+              <tr>
+                <td><a href="aparat.html">Aparat ngrohje</a></td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <div class="col-sm-6">
+    <br>
+    <br>
+    <div class="w3-animate-zoom"><center><h2 style="font-family: Cooper Black; color: #DB1616">OFERTA</h2></center></div>
+    <br>
+    <br>
+    <div id="myCarousel-2" class="carousel slide" data-ride="carousel">
+       <!--Indicators-->
+       <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
+         <li data-target="#myCarousel" data-slide-to="4"></li>
+         <li data-target="#myCarousel" data-slide-to="5"></li>       
+       </ol>
+       <!-- Wrapper for slides -->
+       <div class="carousel-inner">
+         <div class="item active">
+           <img src="img/img1.webp" alt="Foto 1" style="width: 100%; height: 400px;">
+         </div>
+         <div class="item">
+           <img src="img/img2.jpg" alt="Foto 2" style="width: 100%; height: 400px;">
+         </div>
+         <div class="item">
+           <img src="img/img3.webp" alt="Foto 3" style="width: 100%; height: 400px;">
+         </div>
+         <div class="item">
+           <img src="img/img4.webp" alt="Foto 4" style="width: 100%; height: 400px;">
+         </div>
+         <div class="item">
+           <img src="img/img5.webp" alt="Foto 5" style="width: 100%; height: 400px;">
+         </div>
+         <div class="item">
+           <img src="img/img6.webp" alt="Foto 6" style="width: 100%; height: 400px;">
+         </div>
+       </div>
+       <!-- Left and right controls -->
+       <a class="left carousel-control" href="#myCarousel-2" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="right carousel-control" href="#myCarousel-2" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         <span class="sr-only">Next</span>
+       </a>
+    </div> 
+  </div>
+</div>
+</div>
+<!--Sherbimet-->
+   <div class="container" id="services">
+    <h2 class="text-center"><a href="sherbimet.html">SHËRBIMET</a></h2>
+    <div class="row" style="padding-top: 50px;" >
+         <div class="col-md-4">
+            <div class="panel panel-default" >
+              <div class="panel-heading">
+                <p><i class="glyphicon glyphicon-credit-card"></i> PAGESË E SIGURT</p>
+              </div>
+              <div class="panel-body">Paguaj me siguri tek Elektroshtëpiake Cikalleshi me pagesë në dërgesë apo transfertë bankare.</div>
+            </div>
+         </div>
+         <div class="col-md-4" >
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <p><span class="fa fa-truck"></span> TRANSPORT NË TË GJITHË VENDIN</p>
+              </div>
+              <div class="panel-body">Elektroshtepiake Cikalleshi ofron shërbimin e transportit në të gjithë zonat kryesore të vendit.</div>
+          </div>
+             
+         </div>
+         <div class="col-md-4"  >
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                <p><span class="glyphicon glyphicon-wrench"></span> SHËRBIMI I KLIENTIT</p>
+               </div>
+               <div class="panel-body">Keni nevojë për ndihmë? Kontaktoni me 044 50 50 50. Operatorët tanë janë në shërbimin tuaj nga ora 08:30 deri në orën 20:00.</div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+ <!-- Kontakt -->    
+  <div class="container animated fadeIn" id="contact">
+
+  <div class="row">
+    <h1 class="header-title"> Kontakt </h1>
+    <hr>
+    <div class="col-md-12" id="parent">
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12008.726463079269!2d19.5493545!3d41.1960139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba55fe169781238f!2sElektroshtepiake%20Cikalleshi!5e0!3m2!1ssq!2s!4v1589282293257!5m2!1ssq!2s" width="100%" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+        
+      <div class="col-md-6">
+        <form action="form.php" class="contact-form" method="post">
+  
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="nm" placeholder="Emri" required="">
+            </div>
+        
+        
+            <div class="form-group form_left">
+              <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
+            </div>
+        
+          <div class="form-group">
+               <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Numri i telefonit" required="">
+          </div>
+          <div class="form-group">
+          <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Shkruaj mesazhin tend ketu..." required=""></textarea>
+          <br>
+            <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Send </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container second-portion">
+  <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">             
+        <div class="icon">
+          <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">EMAIL </h3>
+            <p>
+              <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp cikalleshixhemail@gmail.com
+              <br>
+              <br>
+              <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.elektroshtepiakecikalleshi.com
+            </p>
+          
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">             
+        <div class="icon">
+          <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">KONTAKT</h3>
+              <p>
+              <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp 068 205 1807
+              <br>
+              <br>
+              <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  068 255 1807
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">             
+        <div class="icon">
+          <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">ADRESA</h3>
+              <p>
+               <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp Rruga Egnatia 2079, Kavajë
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>          
+  </div>
+</div>
+
+</div>
+  <footer class="container-fluid text-center" id="footer">
+    <p>Copyright © 2020 All right reserved</p>
+  </footer>
+</body>
+</html>
